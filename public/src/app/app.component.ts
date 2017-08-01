@@ -8,7 +8,11 @@ import {Component, OnInit} from '@angular/core';
       <h1>Four Elements Forge LLC</h1>
     </div>
     <app-nav></app-nav>
+    
+    
     <app-home></app-home>
+    
+    <app-footer></app-footer>
   `
 })
 export class AppComponent implements OnInit {

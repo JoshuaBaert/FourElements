@@ -4,7 +4,7 @@ import {Component, OnInit} from '@angular/core';
   selector: 'app-root',
   styleUrls: ['./app.component.scss'],
   template: `
-    <div class="logo">
+    <div class="Banner">
 
     </div>
     <app-nav></app-nav>

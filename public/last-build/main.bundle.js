@@ -58,7 +58,7 @@ AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
         selector: 'app-root',
         styles: [__webpack_require__("../../../../../src/app/app.component.scss")],
-        template: "\n    <div class=\"Banner\">\n      <h1>Four Elements Forge LLC</h1>\n    </div>\n    <app-nav></app-nav>\n    <app-home></app-home>\n  "
+        template: "\n    <div class=\"Banner\">\n      <h1>Four Elements Forge LLC</h1>\n    </div>\n    <app-nav></app-nav>\n    \n    \n    <app-home></app-home>\n    \n    <app-footer></app-footer>\n  "
     }),
     __metadata("design:paramtypes", [])
 ], AppComponent);
@@ -135,7 +135,7 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".footer-main {\n  width: 100%;\n  min-height: 400px;\n  background: #333;\n  border-top: solid #555555 1px;\n  border-bottom: solid #555555 1px; }\n", ""]);
 
 // exports
 
@@ -172,7 +172,7 @@ FooterComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
         selector: 'app-footer',
         styles: [__webpack_require__("../../../../../src/app/footer/footer.component.scss")],
-        template: ""
+        template: "\n    <div class=\"footer-main\">\n      <div class=\"foot-wrap\">\n        \n      </div>\n      \n    </div>\n  "
     }),
     __metadata("design:paramtypes", [])
 ], FooterComponent);
@@ -254,7 +254,7 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".nav-main {\n  height: 72px;\n  width: 100%;\n  background: #333; }\n\nnav {\n  width: 100%;\n  height: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\nul {\n  margin: 0;\n  display: block; }\n  ul li {\n    display: inline-block;\n    padding: 14px 17.5px;\n    font-size: 14px;\n    font-weight: 600; }\n  ul a:hover {\n    cursor: pointer; }\n\n.nav-absolute {\n  position: absolute;\n  top: 165px; }\n\n.nav-fixed {\n  position: fixed;\n  top: 0; }\n", ""]);
+exports.push([module.i, ".nav-main {\n  height: 72px;\n  width: 100%;\n  border-top: solid #555555 1px;\n  border-bottom: solid #555555 1px;\n  background: #333; }\n\nnav {\n  width: 100%;\n  height: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\nul {\n  margin: 0;\n  display: block; }\n  ul li {\n    display: inline-block;\n    padding: 14px 17.5px;\n    font-size: 14px;\n    font-weight: 600; }\n  ul a:hover {\n    cursor: pointer; }\n\n.nav-absolute {\n  position: absolute;\n  top: 165px; }\n\n.nav-fixed {\n  position: fixed;\n  top: 0; }\n", ""]);
 
 // exports
 
@@ -333,7 +333,7 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, "h3 {\n  margin-bottom: 50px; }\n\n.para {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  background: #333; }\n\n.para-wrap {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  max-width: 650px; }\n", ""]);
+exports.push([module.i, "h3 {\n  margin-bottom: 50px; }\n\n.para {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  border-top: solid #555555 1px;\n  border-bottom: solid #555555 1px;\n  background: #333; }\n\n.para-wrap {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  max-width: 650px; }\n", ""]);
 
 // exports
 

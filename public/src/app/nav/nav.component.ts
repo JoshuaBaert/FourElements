@@ -4,7 +4,7 @@ import {Component, HostListener, OnInit, ViewChild, Renderer2} from '@angular/co
   selector: 'app-nav',
   styleUrls: ['./nav.component.scss'],
   template: `
-    <div class="nav-main nav-relative" #nav>
+    <div class="nav-main nav-absolute" #nav>
       <nav>
         <ul>
           <li>
@@ -33,7 +33,7 @@ import {Component, HostListener, OnInit, ViewChild, Renderer2} from '@angular/co
 })
 export class NavComponent implements OnInit {
   @ViewChild('nav') navMain;
-  relative = true;
+  absolute = true;
 
   constructor(private renderer: Renderer2) {
   }
@@ -43,15 +43,15 @@ export class NavComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   public onScroll(event) {
-    if (event.target.scrollingElement.scrollTop < 200 && this.relative === false) {
+    if (event.target.scrollingElement.scrollTop < 165 && this.absolute === false) {
       this.renderer.removeClass(this.navMain.nativeElement, 'nav-fixed');
-      this.renderer.addClass(this.navMain.nativeElement, 'nav-relative');
-      this.relative = !this.relative;
+      this.renderer.addClass(this.navMain.nativeElement, 'nav-absolute');
+      this.absolute = !this.absolute;
     }
-    if (event.target.scrollingElement.scrollTop >= 200 && this.relative === true) {
-      this.renderer.removeClass(this.navMain.nativeElement, 'nav-relative');
+    if (event.target.scrollingElement.scrollTop >= 165 && this.absolute === true) {
+      this.renderer.removeClass(this.navMain.nativeElement, 'nav-absolute');
       this.renderer.addClass(this.navMain.nativeElement, 'nav-fixed');
-      this.relative = !this.relative;
+      this.absolute = !this.absolute;
     }
   }
 }

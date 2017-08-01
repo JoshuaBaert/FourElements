@@ -2,8 +2,25 @@
 
 body {
   margin: 0;
-  min-height: 200vh;
   
+  
+  font-size: 20px;
   font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
   color: #ddd;
+}
+
+a{
+  font-size: 20px;
+}
+
+p, b {
+  font-size: 20px;
+  line-height: 30px;
+  
+  padding: 15px;
+  margin: 0;
+}
+
+b {
+  padding-top: 12px;
 }

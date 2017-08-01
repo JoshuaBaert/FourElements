@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { PictureComponent } from './picture/picture.component';
 import { HomeComponent } from './home/home.component';
+import { ParaComponent } from './para/para.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     PictureComponent,
-    HomeComponent
+    HomeComponent,
+    ParaComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

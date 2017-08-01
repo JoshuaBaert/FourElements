@@ -5,7 +5,7 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./app.component.scss'],
   template: `
     <div class="Banner">
-
+      <h1>Four Elements Forge LLC</h1>
     </div>
     <app-nav></app-nav>
     <app-home></app-home>

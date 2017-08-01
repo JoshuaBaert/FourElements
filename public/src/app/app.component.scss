@@ -3,6 +3,19 @@
 .Banner {
   width: 100%;
   height: 165px;
-  background-image: url("./assets/img/banner-background.jpg");
   
+  margin-bottom: 72px;
+  
+  background-image: url("../assets/img/banner-background.jpg");
+  background-position: center;
+  background-size: cover;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   h1 {
+     font-size: 36px;
+     font-weight: 800;
+     letter-spacing: 2.88px;
+   }
 }

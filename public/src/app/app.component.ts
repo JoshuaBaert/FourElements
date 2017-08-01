@@ -1,14 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
   styleUrls: ['./app.component.scss'],
   template: `
-    <div>
+    <div class="random-space">
       
     </div>
+    <app-nav></app-nav>
   `
 })
-export class AppComponent {
-  title = 'app works!';
+export class AppComponent implements OnInit {
+
+  constructor() {}
+
+  ngOnInit() {
+  }
+
 }

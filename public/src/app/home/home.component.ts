@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
     <div class="home-main">
 
       <app-picture
-        [background]="'../assets/img/img1.jpg'"
+        [background]="'./assets/img/img1.jpg'"
       ></app-picture>
       
       <app-para
@@ -15,14 +15,14 @@ import { Component, OnInit } from '@angular/core';
       ></app-para>
 
       <app-picture
-        [background]="'../assets/img/img2.jpg'"
+        [background]="'./assets/img/img2.jpg'"
       ></app-picture>
 
       <app-para
       ></app-para>
 
       <app-picture
-        [background]="'../assets/img/img1.jpg'"
+        [background]="'./assets/img/img1.jpg'"
       ></app-picture>
 
     </div>

@@ -14,7 +14,7 @@ const config = require('./config');
 const app = express();
 
 
-app.use(express.static('./public/last-dist'));
+app.use(express.static('./public/last-build'));
 app.use(bodyParser.json());
 app.use(cors());
 

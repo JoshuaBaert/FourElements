@@ -22,8 +22,11 @@ import { Component, OnInit } from '@angular/core';
         </div>
         <div class="foot-bottom">
           <div class="social">
-            <a href="https://www.etsy.com/shop/FourElementsForgeLLC" target="_blank">
+            <a class="icons" href="https://www.etsy.com/shop/FourElementsForgeLLC" target="_blank">
               <div class="icon-div"><i class="fa fa-etsy icons" aria-hidden="true"></i></div>
+            </a>
+            <a class="icons" href="https://www.facebook.com/profile.php?id=100013492599160" target="_blank">
+              <div class="icon-div"><i class="fa fa-facebook icons" aria-hidden="true"></i></div>
             </a>
             
           </div>

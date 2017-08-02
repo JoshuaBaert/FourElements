@@ -21,7 +21,7 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".Banner {\n  width: 100%;\n  height: 325px;\n  margin-bottom: 72px;\n  background-image: url(" + __webpack_require__("../../../../../src/assets/img/banner-background.jpg") + ");\n  background-position: center;\n  background-size: cover;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .Banner h1 {\n    font-size: 36px;\n    font-weight: 800;\n    letter-spacing: 2.88px; }\n", ""]);
+exports.push([module.i, ".banner {\n  width: 100%;\n  height: 325px;\n  margin-bottom: 72px;\n  background-image: url(" + __webpack_require__("../../../../../src/assets/img/banner.jpg") + ");\n  background-position: center;\n  background-size: cover;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .banner .banner-overlay {\n    width: 50%;\n    padding: 8%;\n    background-image: url(" + __webpack_require__("../../../../../src/assets/img/banner-overlay.png") + ");\n    background-position: center;\n    background-size: cover; }\n  .banner h1 {\n    font-size: 36px;\n    font-weight: 800;\n    letter-spacing: 2.88px; }\n", ""]);
 
 // exports
 
@@ -58,7 +58,7 @@ AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-root',
         styles: [__webpack_require__("../../../../../src/app/app.component.scss")],
-        template: "\n    <div class=\"Banner\">\n      <!--<h1>FOUR ELEMENTS FORGE LLC</h1>-->\n    </div>\n    <app-nav></app-nav>\n    \n    <router-outlet></router-outlet>\n    \n    <app-footer></app-footer>\n  "
+        template: "\n    <div class=\"banner\">\n      <div class=\"banner-overlay\"></div>\n    </div>\n    <app-nav></app-nav>\n    \n    <router-outlet></router-outlet>\n    \n    <app-footer></app-footer>\n  "
     }),
     __metadata("design:paramtypes", [])
 ], AppComponent);
@@ -528,10 +528,17 @@ UnderWorkComponent = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/assets/img/banner-background.jpg":
+/***/ "../../../../../src/assets/img/banner-overlay.png":
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "banner-background.112c3080c230461afb80.jpg";
+module.exports = __webpack_require__.p + "banner-overlay.f751d1b4b2779d8f2813.png";
+
+/***/ }),
+
+/***/ "../../../../../src/assets/img/banner.jpg":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "banner.b0184f62f124f52486f9.jpg";
 
 /***/ }),
 

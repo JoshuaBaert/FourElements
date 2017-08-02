@@ -9,8 +9,7 @@ import {Component, OnInit} from '@angular/core';
     </div>
     <app-nav></app-nav>
     
-    
-    <app-home></app-home>
+    <router-outlet></router-outlet>
     
     <app-footer></app-footer>
   `

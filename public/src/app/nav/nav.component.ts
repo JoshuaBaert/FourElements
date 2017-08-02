@@ -55,12 +55,12 @@ export class NavComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   public onScroll(event) {
-    if (event.target.scrollingElement.scrollTop < 165 && this.absolute === false) {
+    if (event.target.scrollingElement.scrollTop < 325 && this.absolute === false) {
       this.renderer.removeClass(this.navMain.nativeElement, 'nav-fixed');
       this.renderer.addClass(this.navMain.nativeElement, 'nav-absolute');
       this.absolute = !this.absolute;
     }
-    if (event.target.scrollingElement.scrollTop >= 165 && this.absolute === true) {
+    if (event.target.scrollingElement.scrollTop >= 325 && this.absolute === true) {
       this.renderer.removeClass(this.navMain.nativeElement, 'nav-absolute');
       this.renderer.addClass(this.navMain.nativeElement, 'nav-fixed');
       this.absolute = !this.absolute;

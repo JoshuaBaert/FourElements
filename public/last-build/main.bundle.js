@@ -21,7 +21,7 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".Banner {\n  width: 100%;\n  height: 165px;\n  margin-bottom: 72px;\n  background-image: url(" + __webpack_require__("../../../../../src/assets/img/banner-background.jpg") + ");\n  background-position: center;\n  background-size: cover;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .Banner h1 {\n    font-size: 36px;\n    font-weight: 800;\n    letter-spacing: 2.88px; }\n", ""]);
+exports.push([module.i, ".Banner {\n  width: 100%;\n  height: 325px;\n  margin-bottom: 72px;\n  background-image: url(" + __webpack_require__("../../../../../src/assets/img/banner-background.jpg") + ");\n  background-position: center;\n  background-size: cover;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .Banner h1 {\n    font-size: 36px;\n    font-weight: 800;\n    letter-spacing: 2.88px; }\n", ""]);
 
 // exports
 
@@ -58,7 +58,7 @@ AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-root',
         styles: [__webpack_require__("../../../../../src/app/app.component.scss")],
-        template: "\n    <div class=\"Banner\">\n      <h1>FOUR ELEMENTS FORGE LLC</h1>\n    </div>\n    <app-nav></app-nav>\n    \n    <router-outlet></router-outlet>\n    \n    <app-footer></app-footer>\n  "
+        template: "\n    <div class=\"Banner\">\n      <!--<h1>FOUR ELEMENTS FORGE LLC</h1>-->\n    </div>\n    <app-nav></app-nav>\n    \n    <router-outlet></router-outlet>\n    \n    <app-footer></app-footer>\n  "
     }),
     __metadata("design:paramtypes", [])
 ], AppComponent);
@@ -260,7 +260,7 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".nav-main {\n  height: 72px;\n  width: 100%;\n  border-top: solid #555555 1px;\n  border-bottom: solid #555555 1px;\n  background: #333; }\n\nnav {\n  width: 100%;\n  height: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\nul {\n  margin: 0;\n  display: block; }\n  ul li {\n    display: inline-block;\n    padding: 14px 17.5px;\n    font-size: 14px;\n    font-weight: 600; }\n  ul a:hover {\n    cursor: pointer; }\n\n.nav-absolute {\n  position: absolute;\n  top: 165px; }\n\n.nav-fixed {\n  position: fixed;\n  top: 0; }\n", ""]);
+exports.push([module.i, ".nav-main {\n  height: 72px;\n  width: 100%;\n  border-top: solid #555555 1px;\n  border-bottom: solid #555555 1px;\n  background: #333; }\n\nnav {\n  width: 100%;\n  height: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\nul {\n  margin: 0;\n  display: block; }\n  ul li {\n    display: inline-block;\n    padding: 14px 17.5px;\n    font-size: 14px;\n    font-weight: 600; }\n  ul a:hover {\n    cursor: pointer; }\n\n.nav-absolute {\n  position: absolute;\n  top: 325px; }\n\n.nav-fixed {\n  position: fixed;\n  top: 0; }\n", ""]);
 
 // exports
 
@@ -294,12 +294,12 @@ var NavComponent = (function () {
     NavComponent.prototype.ngOnInit = function () {
     };
     NavComponent.prototype.onScroll = function (event) {
-        if (event.target.scrollingElement.scrollTop < 165 && this.absolute === false) {
+        if (event.target.scrollingElement.scrollTop < 325 && this.absolute === false) {
             this.renderer.removeClass(this.navMain.nativeElement, 'nav-fixed');
             this.renderer.addClass(this.navMain.nativeElement, 'nav-absolute');
             this.absolute = !this.absolute;
         }
-        if (event.target.scrollingElement.scrollTop >= 165 && this.absolute === true) {
+        if (event.target.scrollingElement.scrollTop >= 325 && this.absolute === true) {
             this.renderer.removeClass(this.navMain.nativeElement, 'nav-absolute');
             this.renderer.addClass(this.navMain.nativeElement, 'nav-fixed');
             this.absolute = !this.absolute;
@@ -531,7 +531,7 @@ UnderWorkComponent = __decorate([
 /***/ "../../../../../src/assets/img/banner-background.jpg":
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "banner-background.a21fe7a92dbae34f93c7.jpg";
+module.exports = __webpack_require__.p + "banner-background.112c3080c230461afb80.jpg";
 
 /***/ }),
 

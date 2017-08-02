@@ -19,7 +19,7 @@ import {Component, HostListener, OnInit, ViewChild, Renderer2} from '@angular/co
           </li>
           <li>
             <a href="https://www.etsy.com/shop/FourElementsForgeLLC" target="_blank">
-              Display Case
+              Shop
             </a>
           </li>
           <li>

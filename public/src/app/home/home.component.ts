@@ -31,7 +31,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   introParagraph = [
-    {type: 'header', text: 'Some Header'},
+    {type: 'header', text: 'About Us'},
     {type: 'paragraph', text: `Four Elements Forge is your classic traditional blacksmith
      shop located in central Utah right off of good old I15. We specialize in custom home
      decor iron work, staircase/porch railings, and unique jewelry. That is not to say 

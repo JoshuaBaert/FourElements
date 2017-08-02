@@ -9,15 +9,15 @@ import { Component, OnInit } from '@angular/core';
         <div class="left-right-wrap">
           <div class="foot-left">
             <b>Address</b>
-            <p>Your street here <br> Your city state zip</p>
+            <p>1261 W 800 S <br>Orem, UT 84058</p>
 
             <b>Hours</b>
-            <p>Some days 9:00am - something pm<br> what ever else you need here</p>
+            <p>Mon - Fri 8:00am - 6:00 pm<br>Sat 9:00am - 2:00pm <br> Closed Sun</p>
           </div>
           <div class="foot-right">
             <b>Contact us</b>
-            <p>We need to talk about what you want here. This could definately use some more
-              stuff here.</p>
+            <p>Phone: <a href="tel:951-415-5023">951-415-5023</a> <br>
+            Email: <a href="mailto:4elements4g@gmail.com">4elements4g@gmail.com</a></p>
           </div>
         </div>
         <div class="foot-bottom">

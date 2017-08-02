@@ -4,8 +4,8 @@ import {Component, OnInit} from '@angular/core';
   selector: 'app-root',
   styleUrls: ['./app.component.scss'],
   template: `
-    <div class="Banner">
-      <!--<h1>FOUR ELEMENTS FORGE LLC</h1>-->
+    <div class="banner">
+      <div class="banner-overlay"></div>
     </div>
     <app-nav></app-nav>
     

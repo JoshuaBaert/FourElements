@@ -1,18 +1,26 @@
 
 
-.Banner {
+.banner {
   width: 100%;
   height: 325px;
   
   margin-bottom: 72px;
   
-  background-image: url("../assets/img/banner-background.jpg");
+  background-image: url("../assets/img/banner.jpg");
   background-position: center;
   background-size: cover;
   
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  .banner-overlay {
+    width: 50%;
+    padding: 8%;
+    background-image: url("../assets/img/banner-overlay.png");
+    background-position: center;
+    background-size: cover;
+  }
    h1 {
      font-size: 36px;
      font-weight: 800;

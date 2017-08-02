@@ -4,17 +4,24 @@ body {
   margin: 0;
   
   
-  font-size: 20px;
+  font-size: 15px;
   font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
   color: #ddd;
 }
 
 a{
-  font-size: 20px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #ddd;
+}
+
+a:visited{
+  color: #ddd;
+  text-decoration: none;
 }
 
 p, b {
-  font-size: 20px;
+  font-size: 15px;
   line-height: 30px;
   
   padding: 15px;

@@ -288,7 +288,7 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\nbody {\n  margin: 0;\n  font-size: 20px;\n  font-family: \"Libre Franklin\", \"Helvetica Neue\", helvetica, arial, sans-serif;\n  color: #ddd; }\n\na {\n  font-size: 20px; }\n\np, b {\n  font-size: 20px;\n  line-height: 30px;\n  padding: 15px;\n  margin: 0; }\n\nb {\n  padding-top: 12px; }\n", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\nbody {\n  margin: 0;\n  font-size: 15px;\n  font-family: \"Libre Franklin\", \"Helvetica Neue\", helvetica, arial, sans-serif;\n  color: #ddd; }\n\na {\n  font-size: 15px;\n  text-decoration: none;\n  color: #ddd; }\n\na:visited {\n  color: #ddd;\n  text-decoration: none; }\n\np, b {\n  font-size: 15px;\n  line-height: 30px;\n  padding: 15px;\n  margin: 0; }\n\nb {\n  padding-top: 12px; }\n", ""]);
 
 // exports
 

@@ -55,10 +55,10 @@ var AppComponent = (function () {
     return AppComponent;
 }());
 AppComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-root',
         styles: [__webpack_require__("../../../../../src/app/app.component.scss")],
-        template: "\n    <div class=\"Banner\">\n      <h1>Four Elements Forge LLC</h1>\n    </div>\n    <app-nav></app-nav>\n    \n    \n    <app-home></app-home>\n    \n    <app-footer></app-footer>\n  "
+        template: "\n    <div class=\"Banner\">\n      <h1>FOUR ELEMENTS FORGE LLC</h1>\n    </div>\n    <app-nav></app-nav>\n    \n    <router-outlet></router-outlet>\n    \n    <app-footer></app-footer>\n  "
     }),
     __metadata("design:paramtypes", [])
 ], AppComponent);
@@ -75,12 +75,14 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__nav_nav_component__ = __webpack_require__("../../../../../src/app/nav/nav.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__picture_picture_component__ = __webpack_require__("../../../../../src/app/picture/picture.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__para_para_component__ = __webpack_require__("../../../../../src/app/para/para.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__footer_footer_component__ = __webpack_require__("../../../../../src/app/footer/footer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__nav_nav_component__ = __webpack_require__("../../../../../src/app/nav/nav.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__picture_picture_component__ = __webpack_require__("../../../../../src/app/picture/picture.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__para_para_component__ = __webpack_require__("../../../../../src/app/para/para.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__footer_footer_component__ = __webpack_require__("../../../../../src/app/footer/footer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__under_work_under_work_component__ = __webpack_require__("../../../../../src/app/under-work/under-work.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -88,6 +90,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -106,20 +110,25 @@ var AppModule = (function () {
 AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_5__nav_nav_component__["a" /* NavComponent */],
-            __WEBPACK_IMPORTED_MODULE_6__picture_picture_component__["a" /* PictureComponent */],
-            __WEBPACK_IMPORTED_MODULE_7__home_home_component__["a" /* HomeComponent */],
-            __WEBPACK_IMPORTED_MODULE_8__para_para_component__["a" /* ParaComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__footer_footer_component__["a" /* FooterComponent */]
+            __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_6__nav_nav_component__["a" /* NavComponent */],
+            __WEBPACK_IMPORTED_MODULE_7__picture_picture_component__["a" /* PictureComponent */],
+            __WEBPACK_IMPORTED_MODULE_8__home_home_component__["a" /* HomeComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__para_para_component__["a" /* ParaComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__footer_footer_component__["a" /* FooterComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__under_work_under_work_component__["a" /* UnderWorkComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */]
+            __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* RouterModule */].forRoot([
+                { path: '', component: __WEBPACK_IMPORTED_MODULE_8__home_home_component__["a" /* HomeComponent */] },
+                { path: 'under-work', component: __WEBPACK_IMPORTED_MODULE_11__under_work_under_work_component__["a" /* UnderWorkComponent */] },
+            ]),
         ],
         providers: [],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
@@ -169,7 +178,7 @@ var FooterComponent = (function () {
     return FooterComponent;
 }());
 FooterComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-footer',
         styles: [__webpack_require__("../../../../../src/app/footer/footer.component.scss")],
         template: "\n    <div class=\"footer-main\">\n      <div class=\"foot-wrap\">\n        <div class=\"left-right-wrap\">\n          <div class=\"foot-left\">\n            <b>Address</b>\n            <p>Your street here <br> Your city state zip</p>\n\n            <b>Hours</b>\n            <p>Some days 9:00am - something pm<br> what ever else you need here</p>\n          </div>\n          <div class=\"foot-right\">\n            <b>Contact us</b>\n            <p>We need to talk about what you want here. This could definately use some more\n              stuff here.</p>\n          </div>\n        </div>\n        <div class=\"foot-bottom\">\n          <div class=\"social\">\n            <a href=\"https://www.etsy.com/shop/FourElementsForgeLLC\" target=\"_blank\">\n              <div class=\"icon-div\"><i class=\"fa fa-etsy icons\" aria-hidden=\"true\"></i></div>\n            </a>\n            \n          </div>\n        </div>\n        \n      </div>\n      \n    </div>\n  "
@@ -217,27 +226,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var HomeComponent = (function () {
     function HomeComponent() {
-        this.sampleParagraph = [
+        this.introParagraph = [
             { type: 'header', text: 'Some Header' },
-            { type: 'paragraph', text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed vehicula felis. Aenean auctor quis ex quis fermentum. Integer dignissim felis sapien, sit amet dignissim massa tincidunt at. Suspendisse id placerat nulla, nec congue ante. Proin varius tellus sed tellus porta, ut tempus magna sollicitudin. Nulla sed nisi urna. Duis rutrum magna quis tortor tristique, rhoncus lobortis libero interdum. Nunc vulputate dictum est, ac tristique urna finibus sed. Pellentesque mollis arcu ac ligula luctus, malesuada condimentum sapien congue. Aliquam ut odio convallis lectus aliquam mattis vel id sem. Nunc nec turpis sit amet enim luctus faucibus eu at leo. Cras egestas ligula a turpis luctus posuere. Cras non scelerisque nisi." },
-            { type: 'sub-header', text: 'Some sub-head' },
-            { type: 'paragraph', text: "Etiam non odio et lacus porta hendrerit quis at libero. Nam tincidunt vestibulum risus, ut lobortis ex dignissim eget. Suspendisse tincidunt nunc ut massa accumsan, ut iaculis tellus congue. Donec cursus lacus in elit consectetur interdum. Vestibulum vitae velit purus. Duis tempor sem nec dapibus fringilla. Morbi suscipit neque eu fermentum ultrices. Nunc malesuada metus eget augue pellentesque rhoncus. Donec condimentum condimentum felis sit amet suscipit. In vitae pulvinar lectus. Donec non felis sit amet tellus iaculis rhoncus. Fusce euismod lacus vel diam ultricies hendrerit." },
-            { type: 'sub-header', text: 'Some other sub-head' },
-            { type: 'paragraph', text: "Nam et fringilla ligula. Ut tincidunt gravida orci, eu semper metus tristique a. Praesent hendrerit ut ipsum eget rutrum. Curabitur ornare scelerisque lacus, non vestibulum eros maximus et. Nulla laoreet est sed pretium hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in purus id metus vulputate lobortis. Ut viverra tristique diam vel cursus. Duis lacinia nibh dui, sit amet consequat diam fermentum sit amet." },
-            { type: 'sub-header', text: 'one more sub-head' },
-            { type: 'paragraph', text: "Mauris at justo et tellus gravida aliquet. Phasellus quis augue at risus pulvinar sodales nec imperdiet massa. Nam non leo vitae nulla lacinia blandit. Mauris lacinia tempus quam, vel dictum dolor congue in. Quisque posuere felis ut urna ultrices, et hendrerit eros luctus. Aliquam bibendum nulla in ante dignissim tincidunt. Duis a venenatis lorem. Suspendisse vel erat tempus, iaculis leo vitae, auctor diam. Mauris vestibulum dui non tellus volutpat, vitae ultrices mauris eleifend. Duis consequat, erat vel aliquam mattis, turpis quam luctus enim, eget auctor est mauris quis elit. Mauris euismod magna a lectus aliquam, nec fringilla nunc fermentum. Integer ultrices, eros ac consequat fermentum, ipsum tortor pellentesque diam, in aliquam tortor felis at arcu. Sed ut ultricies purus. Suspendisse eget maximus enim. Nulla mollis massa enim, eu lacinia turpis dignissim in." },
+            { type: 'paragraph', text: "Four Elements Forge is your classic traditional blacksmith shop located in central Utah right off of good old I15. We specialize in custom home decor iron work, staircase/porch railings, and unique jewelry. That is not to say that we don\u2019t craft the occasional high carbon blade every so often when requested. Our moto is if it\u2019s made of steel or iron we can probably forge it for you. We began as a simple Idea, make things that were not fake, that did not break and were made in the USA for customers that are looking for high end quality products for their yard, or home, or office. We took this Idea and expanded to wedding hardware including the one ring that will bind them all and added on our fine crafting area for the more dainty metals. It is our mission to bring you, the customer, the same amazing lasts forever quality that you would expect to be dug up from a thousand years ago, and put it in your hands" },
         ];
     }
     HomeComponent.prototype.ngOnInit = function () {
-        console.log(this.sampleParagraph);
     };
     return HomeComponent;
 }());
 HomeComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-home',
         styles: [__webpack_require__("../../../../../src/app/home/home.component.scss")],
-        template: "\n    <div class=\"home-main\">\n\n      <app-picture\n        [background]=\"'./assets/img/img1.jpg'\"\n      ></app-picture>\n      \n      <app-para\n        [info]=\"sampleParagraph\"\n      ></app-para>\n\n      <app-picture\n        [background]=\"'./assets/img/img2.jpg'\"\n      ></app-picture>\n\n      <app-para\n      ></app-para>\n\n      <app-picture\n        [background]=\"'./assets/img/img1.jpg'\"\n      ></app-picture>\n\n    </div>\n  "
+        template: "\n    <div class=\"home-main\">\n\n      <app-picture\n        [background]=\"'./assets/img/img1.jpg'\"\n      ></app-picture>\n      \n      <app-para\n        [info]=\"introParagraph\"\n      ></app-para>\n\n      <app-picture\n        [background]=\"'./assets/img/img2.jpg'\"\n      ></app-picture>\n\n      <app-para\n      ></app-para>\n\n      <app-picture\n        [background]=\"'./assets/img/img3.jpg'\"\n      ></app-picture>\n\n    </div>\n  "
     }),
     __metadata("design:paramtypes", [])
 ], HomeComponent);
@@ -302,22 +304,22 @@ var NavComponent = (function () {
     return NavComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* ViewChild */])('nav'),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_15" /* ViewChild */])('nav'),
     __metadata("design:type", Object)
 ], NavComponent.prototype, "navMain", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_7" /* HostListener */])('window:scroll', ['$event']),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* HostListener */])('window:scroll', ['$event']),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
 ], NavComponent.prototype, "onScroll", null);
 NavComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-nav',
         styles: [__webpack_require__("../../../../../src/app/nav/nav.component.scss")],
-        template: "\n    <div class=\"nav-main nav-absolute\" #nav>\n      <nav>\n        <ul>\n          <li>\n            <a>The Forge</a>\n          </li>\n          <li>\n            <a>Gallery</a>\n          </li>\n          <li>\n            <a>Display Case</a>\n          </li>\n          <li>\n            <a>Custom Orders</a>\n          </li>\n          <li>\n            <a>Classes</a>\n          </li>\n          <li>\n            <a>Contact</a>\n          </li>\n        </ul>\n      </nav>\n\n    </div>\n  "
+        template: "\n    <div class=\"nav-main nav-absolute\" #nav>\n      <nav>\n        <ul>\n          <li>\n            <a routerLink=\"\">\n              The Forge\n            </a>\n          </li>\n          <li>\n            <a routerLink=\"under-work\">\n              Gallery\n            </a>\n          </li>\n          <li>\n            <a href=\"https://www.etsy.com/shop/FourElementsForgeLLC\" target=\"_blank\">\n              Display Case\n            </a>\n          </li>\n          <li>\n            <a routerLink=\"under-work\">\n              Custom Work\n            </a>\n          </li>\n          <li>\n            <a routerLink=\"under-work\">\n              Lessons\n            </a>\n          </li>\n          <li>\n            <a routerLink=\"under-work\">\n              Contact\n            </a>\n          </li>\n        </ul>\n      </nav>\n\n    </div>\n  "
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_1" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_1" /* Renderer2 */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Renderer2 */]) === "function" && _a || Object])
 ], NavComponent);
 
 var _a;
@@ -372,11 +374,11 @@ var ParaComponent = (function () {
     return ParaComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["O" /* Input */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
     __metadata("design:type", Object)
 ], ParaComponent.prototype, "info", void 0);
 ParaComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-para',
         styles: [__webpack_require__("../../../../../src/app/para/para.component.scss")],
         template: "\n    <div class=\"para\">\n      <div class=\"para-wrap\">\n        <div *ngFor=\"let section of info\">\n          <h3 *ngIf=\"section.type == 'header'\">{{section.text}}</h3>\n          <b *ngIf=\"section.type == 'sub-header'\">{{section.text}}</b>\n          <p *ngIf=\"section.type == 'paragraph'\">{{section.text}}</p>\n        </div>\n    </div>\n  "
@@ -425,31 +427,100 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var PictureComponent = (function () {
     function PictureComponent(renderer) {
         this.renderer = renderer;
+        this.height = '100vh';
+        this.attachment = 'fixed';
     }
     PictureComponent.prototype.ngOnInit = function () {
         this.renderer.setStyle(this.picMain.nativeElement, 'background-image', "url(\"" + this.background + "\")");
+        this.renderer.setStyle(this.picMain.nativeElement, 'height', this.height);
+        this.renderer.setStyle(this.picMain.nativeElement, 'background-attachment', this.attachment);
     };
     return PictureComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["O" /* Input */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
     __metadata("design:type", Object)
 ], PictureComponent.prototype, "background", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* ViewChild */])('pic'),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
+    __metadata("design:type", Object)
+], PictureComponent.prototype, "height", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
+    __metadata("design:type", Object)
+], PictureComponent.prototype, "attachment", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_15" /* ViewChild */])('pic'),
     __metadata("design:type", Object)
 ], PictureComponent.prototype, "picMain", void 0);
 PictureComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-picture',
         styles: [__webpack_require__("../../../../../src/app/picture/picture.component.scss")],
         template: "\n    <div class=\"pic-main\" #pic>\n      \n    </div>\n  "
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_1" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_1" /* Renderer2 */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Renderer2 */]) === "function" && _a || Object])
 ], PictureComponent);
 
 var _a;
 //# sourceMappingURL=picture.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/under-work/under-work.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".working-on-it {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/under-work/under-work.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UnderWorkComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var UnderWorkComponent = (function () {
+    function UnderWorkComponent() {
+        this.underConstruction = [
+            { type: 'header', text: 'Site is still "In The Forge"' }
+        ];
+    }
+    UnderWorkComponent.prototype.ngOnInit = function () {
+    };
+    return UnderWorkComponent;
+}());
+UnderWorkComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+        selector: 'app-under-work',
+        styles: [__webpack_require__("../../../../../src/app/under-work/under-work.component.scss")],
+        template: "\n    <app-para\n      [info]=\"underConstruction\"\n    ></app-para>\n    \n    <app-picture\n      [background]=\"'./assets/img/under-work2.gif'\"\n      [height]=\"'60vh'\"\n      [attachment]=\"'scroll'\"\n    ></app-picture>\n    \n    <!--<div class=\"working-on-it\">\n      <img \n        class=\"working-img\"\n        src=\"./assets/img/under-work2.gif\" \n        alt=\"Site is still In The Forge\">\n    </div>-->\n  "
+    }),
+    __metadata("design:paramtypes", [])
+], UnderWorkComponent);
+
+//# sourceMappingURL=under-work.component.js.map
 
 /***/ }),
 

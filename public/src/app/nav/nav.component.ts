@@ -8,22 +8,34 @@ import {Component, HostListener, OnInit, ViewChild, Renderer2} from '@angular/co
       <nav>
         <ul>
           <li>
-            <a>The Forge</a>
+            <a routerLink="">
+              The Forge
+            </a>
           </li>
           <li>
-            <a>Gallery</a>
+            <a routerLink="under-work">
+              Gallery
+            </a>
           </li>
           <li>
-            <a>Display Case</a>
+            <a href="https://www.etsy.com/shop/FourElementsForgeLLC" target="_blank">
+              Display Case
+            </a>
           </li>
           <li>
-            <a>Custom Orders</a>
+            <a routerLink="under-work">
+              Custom Work
+            </a>
           </li>
           <li>
-            <a>Classes</a>
+            <a routerLink="under-work">
+              Lessons
+            </a>
           </li>
           <li>
-            <a>Contact</a>
+            <a routerLink="under-work">
+              Contact
+            </a>
           </li>
         </ul>
       </nav>

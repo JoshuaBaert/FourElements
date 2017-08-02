@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
       ></app-picture>
       
       <app-para
-        [info]="sampleParagraph"
+        [info]="introParagraph"
       ></app-para>
 
       <app-picture
@@ -22,27 +22,20 @@ import { Component, OnInit } from '@angular/core';
       ></app-para>
 
       <app-picture
-        [background]="'./assets/img/img1.jpg'"
+        [background]="'./assets/img/img3.jpg'"
       ></app-picture>
 
     </div>
   `
 })
 export class HomeComponent implements OnInit {
-  sampleParagraph = [
+  introParagraph = [
     {type: 'header', text: 'Some Header'},
-    {type: 'paragraph', text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed vehicula felis. Aenean auctor quis ex quis fermentum. Integer dignissim felis sapien, sit amet dignissim massa tincidunt at. Suspendisse id placerat nulla, nec congue ante. Proin varius tellus sed tellus porta, ut tempus magna sollicitudin. Nulla sed nisi urna. Duis rutrum magna quis tortor tristique, rhoncus lobortis libero interdum. Nunc vulputate dictum est, ac tristique urna finibus sed. Pellentesque mollis arcu ac ligula luctus, malesuada condimentum sapien congue. Aliquam ut odio convallis lectus aliquam mattis vel id sem. Nunc nec turpis sit amet enim luctus faucibus eu at leo. Cras egestas ligula a turpis luctus posuere. Cras non scelerisque nisi.`},
-    {type: 'sub-header', text: 'Some sub-head'},
-    {type: 'paragraph', text: `Etiam non odio et lacus porta hendrerit quis at libero. Nam tincidunt vestibulum risus, ut lobortis ex dignissim eget. Suspendisse tincidunt nunc ut massa accumsan, ut iaculis tellus congue. Donec cursus lacus in elit consectetur interdum. Vestibulum vitae velit purus. Duis tempor sem nec dapibus fringilla. Morbi suscipit neque eu fermentum ultrices. Nunc malesuada metus eget augue pellentesque rhoncus. Donec condimentum condimentum felis sit amet suscipit. In vitae pulvinar lectus. Donec non felis sit amet tellus iaculis rhoncus. Fusce euismod lacus vel diam ultricies hendrerit.`},
-    {type: 'sub-header', text: 'Some other sub-head'},
-    {type: 'paragraph', text: `Nam et fringilla ligula. Ut tincidunt gravida orci, eu semper metus tristique a. Praesent hendrerit ut ipsum eget rutrum. Curabitur ornare scelerisque lacus, non vestibulum eros maximus et. Nulla laoreet est sed pretium hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in purus id metus vulputate lobortis. Ut viverra tristique diam vel cursus. Duis lacinia nibh dui, sit amet consequat diam fermentum sit amet.`},
-    {type: 'sub-header', text: 'one more sub-head'},
-    {type: 'paragraph', text: `Mauris at justo et tellus gravida aliquet. Phasellus quis augue at risus pulvinar sodales nec imperdiet massa. Nam non leo vitae nulla lacinia blandit. Mauris lacinia tempus quam, vel dictum dolor congue in. Quisque posuere felis ut urna ultrices, et hendrerit eros luctus. Aliquam bibendum nulla in ante dignissim tincidunt. Duis a venenatis lorem. Suspendisse vel erat tempus, iaculis leo vitae, auctor diam. Mauris vestibulum dui non tellus volutpat, vitae ultrices mauris eleifend. Duis consequat, erat vel aliquam mattis, turpis quam luctus enim, eget auctor est mauris quis elit. Mauris euismod magna a lectus aliquam, nec fringilla nunc fermentum. Integer ultrices, eros ac consequat fermentum, ipsum tortor pellentesque diam, in aliquam tortor felis at arcu. Sed ut ultricies purus. Suspendisse eget maximus enim. Nulla mollis massa enim, eu lacinia turpis dignissim in.`},
+    {type: 'paragraph', text: `Four Elements Forge is your classic traditional blacksmith shop located in central Utah right off of good old I15. We specialize in custom home decor iron work, staircase/porch railings, and unique jewelry. That is not to say that we don’t craft the occasional high carbon blade every so often when requested. Our moto is if it’s made of steel or iron we can probably forge it for you. We began as a simple Idea, make things that were not fake, that did not break and were made in the USA for customers that are looking for high end quality products for their yard, or home, or office. We took this Idea and expanded to wedding hardware including the one ring that will bind them all and added on our fine crafting area for the more dainty metals. It is our mission to bring you, the customer, the same amazing lasts forever quality that you would expect to be dug up from a thousand years ago, and put it in your hands`},
   ];
   constructor() { }
 
   ngOnInit() {
-    console.log(this.sampleParagraph);
   }
 
 }

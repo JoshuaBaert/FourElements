@@ -3,11 +3,55 @@
 .footer-main {
   width: 100%;
   min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   background: #333;
   border-top: solid #555555 1px;
   border-bottom: solid #555555 1px;
   
-  .foot-wrap {
   
+  .foot-wrap {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .left-right-wrap {
+    max-width: 650px;
+    display: flex;
+    flex-direction: row;
+    
+  }
+  
+  .foot-left {
+    min-width: 400px;
+  
+  }
+  .foot-right {
+  
+  }
+  
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .icon-div {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #ddd;
+  
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .icons {
+      color: black;
+    }
   }
 }

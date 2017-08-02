@@ -135,7 +135,7 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".footer-main {\n  width: 100%;\n  min-height: 400px;\n  background: #333;\n  border-top: solid #555555 1px;\n  border-bottom: solid #555555 1px; }\n", ""]);
+exports.push([module.i, ".footer-main {\n  width: 100%;\n  min-height: 400px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  background: #333;\n  border-top: solid #555555 1px;\n  border-bottom: solid #555555 1px; }\n  .footer-main .foot-wrap {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column; }\n  .footer-main .left-right-wrap {\n    max-width: 650px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: row;\n            flex-direction: row; }\n  .footer-main .foot-left {\n    min-width: 400px; }\n  .footer-main .social {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center; }\n    .footer-main .social .icon-div {\n      width: 30px;\n      height: 30px;\n      border-radius: 50%;\n      background: #ddd;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center; }\n    .footer-main .social .icons {\n      color: black; }\n", ""]);
 
 // exports
 
@@ -172,7 +172,7 @@ FooterComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
         selector: 'app-footer',
         styles: [__webpack_require__("../../../../../src/app/footer/footer.component.scss")],
-        template: "\n    <div class=\"footer-main\">\n      <div class=\"foot-wrap\">\n        \n      </div>\n      \n    </div>\n  "
+        template: "\n    <div class=\"footer-main\">\n      <div class=\"foot-wrap\">\n        <div class=\"left-right-wrap\">\n          <div class=\"foot-left\">\n            <b>Address</b>\n            <p>Your street here <br> Your city state zip</p>\n\n            <b>Hours</b>\n            <p>Some days 9:00am - something pm<br> what ever else you need here</p>\n          </div>\n          <div class=\"foot-right\">\n            <b>Contact us</b>\n            <p>We need to talk about what you want here. This could definately use some more\n              stuff here.</p>\n          </div>\n        </div>\n        <div class=\"foot-bottom\">\n          <div class=\"social\">\n            <a href=\"https://www.etsy.com/shop/FourElementsForgeLLC\" target=\"_blank\">\n              <div class=\"icon-div\"><i class=\"fa fa-etsy icons\" aria-hidden=\"true\"></i></div>\n            </a>\n            \n          </div>\n        </div>\n        \n      </div>\n      \n    </div>\n  "
     }),
     __metadata("design:paramtypes", [])
 ], FooterComponent);
